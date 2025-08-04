@@ -29,14 +29,11 @@
 		<script>
 			const num = Math.floor(Math.random() * 80) + 1;
 
-			const cdn1 = `https://raw.githubusercontent.com/1718638143/img/refs/heads/master/img/${num}.png`;
-			const cdn2 = `https://cdn.jsdelivr.net/gh/1718638143/img@master/img/${num}.png`;
+			const cdn1 =
+				`https://proxy.pipers.cn/https://raw.githubusercontent.com/1718638143/img/refs/heads/master/img/${num}.png`;
 
 			const img = document.getElementById('wallpaper');
 			img.src = cdn1;
-			img.onerror = () => {
-				img.src = cdn2;
-			};
 		</script>
 	</body>
 </html>
